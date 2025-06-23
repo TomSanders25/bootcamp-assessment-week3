@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tom Sanders - Web Developer</title>
+</head>
+<body class="dark-mode">
+    <header class="sticky-header">
+        <h1>Tom Sanders</h1>
+        <nav>
+            <h2>
+                <ul>
+                    <li><a href="#section-about">About</a></li>
+                    <li><a href="#section-projects">Projects</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+
+    <section id="section-about">
+        <h2>About</h2>
+            <div class="section-about-container">
+                <div class="section-item">
+                    <img class="photo-image" src="./assets/img/photo.png">
+                </div>
+                <div class="section-item">
+                    <p>I am a full-stack web developer based in Southampton, UK, with over a decade of experience in the IT industry.</p>
+                    <p>My skills include:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Windows desktop application frameworks: WPF, MFC</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="section-projects">
+        <h2>Projects</h2>
+        <p>I have recently worked on the following projects:</p>
+        <div class="section-projects-container">
+            <div class="section-item">
+                <img class="project-image" src="./assets/img/project-x.png">
+            </div>
+            <div class="section-item">
+                <h3>Project X</h3>
+                <p>A fictitious project (placeholder)</p>
+            </div>
+            <div class="section-item">
+                <img class="project-image" src="./assets/img/project-y.png">
+            </div>
+            <div class="section-item">
+                <h3>Project Y</h3>
+                <p>Another fictitious project (placeholder)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-contact">
+        <h2>Contact</h2>
+
+        <p>You can contact me at:</p>
+        <div class="section-contact-direct">
+            <div class="contact-direct-label">
+                <p class="contact-direct-tel">Telephone:</p>
+            </div>
+            <div>
+                <a class="contact-direct-link" href="tel:+447572721741">+447572721741</a>
+            </div>
+            <div class="contact-direct-label">
+                <p class="contact-direct-email">Email:</p>
+            </div>
+            <div>
+                <a class="contact-direct-link" href="mailto:tomisand1985@gmail.com">tomisand1985@gmail.com</a>
+            </div>
+        </div>
+
+        <br>
+
+        <p>Alternatively, please use this contact form:</p>
+
+        <form action="submit.php" method="post">
+            <div class="section-contact-form">
+                <div class="contact-form-label">
+                    <label for="contact-form-name">Name:</label>
+                </div>
+                <div class="section-item">
+                    <input class="contact-text-input" type="text" name="contact-form-name" id="contact-form-name">
+                </div>
+
+                <div class="contact-form-label">
+                    <label for="contact-form-email">Email:</label>
+                </div>
+
+                <div class="section-item">
+                    <input class="contact-text-input" type="email" name="contact-form-email" id="contact-form-email">
+                </div>
+
+                <div class="contact-form-label">
+                    <p><label for="contact-form-message">Message:</label></p>
+                </div>
+
+                <div class="section-item">
+                    <textarea class="contact-text-input" id="message" name="contact-form-message" rows="5"></textarea>
+                </div>
+                
+                <div class="contact-form-label"></div>
+                <div class="section-item">
+                    <input type="button" value="Submit" id="contact-form-button">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Tom Sanders</p>
+    </footer>
+    
+</body>
+</html>
