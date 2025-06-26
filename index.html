@@ -3,145 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>Tom Sanders - Web Developer</title>
 </head>
 <body>
-    <header>
-        <!-- Bootstrap position helper 'sticky-top; used for sticky header-->
-        <nav class="navbar bg-primary sticky-top navbar-expand-md" data-bs-theme="dark">
+    <header class="sticky-top ">
+        <!-- Bootstrap position helper 'sticky-top' used for sticky header -->
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
             <div class="container justify-content-center">
                 <h1>
                     <a class="navbar-brand" href="#">Tom Sanders</a>
                 </h1>
 
-                <!-- Navbar toggler will display to the right of the brand text-->
+                <!-- Navbar toggler will display to the right of the brand text -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                         aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation bar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- flex-grow-0 allows navbar elements to take the remaining space-->
+                <!-- flex-grow-0 allows navbar elements to take the remaining space -->
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarContent">
                     <ul class="navbar-nav text-center">
-                        <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section-projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+                        <li class="px-2">
+                            <a class="link-light link-offset-2 link-opacity-100 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="#section-about">About</a>
+                        </li>
+                        <li class="px-2">
+                            <a class="link-light link-offset-2 link-opacity-100 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="#section-projects">Projects</a>
+                        </li>
+                        <li class="px-2">
+                            <a class="link-light link-offset-2 link-opacity-100 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="#section-contact">Contact</a>
+                        </li> 
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section id="section-about">
-        <h2>About</h2>
-            <div class="section-about-container">
-                <div class="section-item">
-                    <img class="photo-image" src="./assets/img/photo.png">
+    <main>
+        <!-- Single page content - Bootstrap rows in a Bootstrap container -->
+        <div class="container max-width-1000px">
+            <section id="section-about">
+                <div class="container">
+                    <div class="row justify-content-center g-0 mt-4">
+                        <h2>About</h2>
+                        <!-- Bootstrap card class used to neatly contain the 'About' information -->
+                        <div class="card text-bg-primary">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./assets/img/photo.png" class="img-fluid rounded w-100" alt="Tom Sanders">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">I am a full-stack web developer based in Southampton, UK, with over a decade of experience in the IT industry.</p>
+                                        <p class="card-text">My skills include:
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>C++</li>
+                                                <li>C#</li>
+                                                <li>Windows desktop application frameworks: WPF, MFC</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="section-item">
-                    <p>I am a full-stack web developer based in Southampton, UK, with over a decade of experience in the IT industry.</p>
-                    <p>My skills include:
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>Windows desktop application frameworks: WPF, MFC</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-    </section>
+            </section>
 
-    <section id="section-projects">
-        <h2>Projects</h2>
-        <p>I have recently worked on the following projects:</p>
-        <div class="section-projects-container">
-            <div class="section-item">
-                <img class="project-image" src="./assets/img/project-x.png">
-            </div>
-            <div class="section-item">
-                <h3>Project X</h3>
-                <p>A fictitious project (placeholder)</p>
-            </div>
-            <div class="section-item">
-                <img class="project-image" src="./assets/img/project-y.png">
-            </div>
-            <div class="section-item">
-                <h3>Project Y</h3>
-                <p>Another fictitious project (placeholder)</p>
-            </div>
+            <section id="section-projects">
+                <div class="container">
+                    <div class="row justify-content-center g-0 mt-4">
+                        <h2>Projects</h2>
+                        <p>I have recently worked on the following projects:</p>
+
+                        <!-- Bootstrap card group class is used to neatly contain 'Project' card groups -->
+                        <div class="card-group">
+                            <div class="card text-bg-primary">
+                                <img src="./assets/img/project-x.png" class="card-img-top" alt="Project X">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project X</h3>
+                                    <p class="card-text">A fictitious project (placeholder)</p>
+                                </div>
+                            </div>
+                            <div class="card text-bg-primary">
+                                <img src="./assets/img/project-y.png" class="card-img-top" alt="Project Y">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project Y</h3>
+                                    <p class="card-text">Another fictitious project (placeholder)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-contact">
+                <!-- Bootstrap Icons used in conjunction with the icon link helper component to improve aesthetics -->
+                <div class="container">
+                    <div class="row justify-content-center g-0 mt-4 mb-2">
+                        <h2>Contact</h2>
+                        <p>You can contact me at:</p>
+                        <div class="row mb-3">
+                            <a class="icon-link link-light link-offset-2 link-opacity-100 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="tel:+447572721741">
+                                <i class="bi bi-telephone"></i>
+                                Tel: +447572721741
+                            </a>
+                        </div>
+                        <div class="row mb-3">
+                            <a class="icon-link link-light link-offset-2 link-opacity-100 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="mailto:tomisand1985@gmail.com">
+                                <i class="bi bi-envelope"></i>
+                                Email: tomisand1985@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p>Alternatively, please use this contact form:</p>
+                    <form action="submit.php" method="post">
+                        <!-- Bootstrap form classes used to improve aesthetics -->
+                        <div class="mb-3">
+                            <label for="contact-form-name" class="form-label">Name:</label>
+                            <input type="email" class="form-control" id="contact-form-name" placeholder="Full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-form-email" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="contact-form-email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-form-message" class="form-label">Message:</label>
+                            <textarea class="form-control" id="contact-form-message" placeholder="Your message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <section id="section-contact">
-        <h2>Contact</h2>
-
-        <p>You can contact me at:</p>
-        <div class="section-contact-direct">
-            <div class="contact-direct-label">
-                <p class="contact-direct-tel">Telephone:</p>
-            </div>
-            <div>
-                <a class="contact-direct-link" href="tel:+447572721741">+447572721741</a>
-            </div>
-            <div class="contact-direct-label">
-                <p class="contact-direct-email">Email:</p>
-            </div>
-            <div>
-                <a class="contact-direct-link" href="mailto:tomisand1985@gmail.com">tomisand1985@gmail.com</a>
-            </div>
+    </main>
+    
+    <!-- Note: Bootstrap does not have any standard footer classes - utility classes have been used to improve appearance -->
+    <footer class="py-3 mt-3">
+        <div class="container text-light text-center">
+            <small class="text-white-50">&copy; Copyright 2025 Tom Sanders</small>
         </div>
-
-        <br>
-
-        <p>Alternatively, please use this contact form:</p>
-
-        <form action="submit.php" method="post">
-            <div class="section-contact-form">
-                <div class="contact-form-label">
-                    <label for="contact-form-name">Name:</label>
-                </div>
-                <div class="section-item">
-                    <input class="contact-text-input" type="text" name="contact-form-name" id="contact-form-name">
-                </div>
-
-                <div class="contact-form-label">
-                    <label for="contact-form-email">Email:</label>
-                </div>
-
-                <div class="section-item">
-                    <input class="contact-text-input" type="email" name="contact-form-email" id="contact-form-email">
-                </div>
-
-                <div class="contact-form-label">
-                    <p><label for="contact-form-message">Message:</label></p>
-                </div>
-
-                <div class="section-item">
-                    <textarea class="contact-text-input" id="message" name="contact-form-message" rows="5"></textarea>
-                </div>
-                
-                <div class="contact-form-label"></div>
-                <div class="section-item">
-                    <input type="button" value="Submit" id="contact-form-button">
-                </div>
-            </div>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 Tom Sanders</p>
     </footer>
     
+    <!-- Note: Popper should be included if using Bootstrap Dropdowns, Tooltips or Popovers -->
     <!--script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
